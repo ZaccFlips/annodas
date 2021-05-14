@@ -223,7 +223,7 @@ nav ul li a{
 }
 @media only screen and (max-width: 770px){
     #features{
-        width: 80%;
+        width: 100%;
     }
     .title-text h1{
         font-size: 35px;
