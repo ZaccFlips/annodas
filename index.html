@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fugaz+One&family=Lobster&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/abb77b776b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Annodas</title>
+</head>
+<body>
+    <section id="banner">
+        <div class="banner-text">
+            <h1>Annodas</h1>
+            <p>Best BnB In The Area</p>
+            <div class="banner-btn">
+                <a href=""><span></span>BOOK A ROOM</a>
+                <a href=""><span></span>READ MORE</a>
+            </div>
+        </div>
+    </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">FEATURES</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">MEET US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menubtn">
+        <img src="/images/menu.png" id="menu">
+    </div>
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var sidenav = document.getElementById("sidenav")
+        var menu = document.getElementById("menu")
+        
+        sidenav.style.right = "-250px"
+
+
+        menubtn.onclick = function(){
+            if(sidenav.style.right == "-250px"){
+                sidenav.style.right = "0";
+                menu.src = "/images/close.png";
+            }
+            else{
+                sidenav.style.right = "-250px";
+                menu.src = "/Barber_Shop_img/menu.png";
+            }
+        }
+    </script>
+</body>
+</html>
