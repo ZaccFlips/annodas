@@ -6,6 +6,8 @@
 body{
     background: rgb(23, 42, 44);
     z-index: -1;
+    margin: 0;
+    padding: 0;
 }
 #banner{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgb(23, 42, 44)), url(/images/bed2.jpg);
